@@ -166,9 +166,16 @@ textarea {
   .white-characters {
     color: #fff;
 
+    font-family: 'courier';
+
     position: absolute;
-    bottom: 3em;
+    bottom: 0;
     right: 3em;
+    line-height: 13px;
+
+    &:hover {
+      line-height: 25px;
+    }
   }
 
 

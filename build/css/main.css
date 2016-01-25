@@ -125,9 +125,13 @@ header {
 
 .white-characters {
   color: #fff;
+  font-family: 'courier';
   position: absolute;
-  bottom: 3em;
-  right: 3em; }
+  bottom: 0;
+  right: 3em;
+  line-height: 13px; }
+  .white-characters:hover {
+    line-height: 25px; }
 
 /* ==========================================================================
    Helper classes
@@ -266,7 +270,5 @@ header {
   h2,
   h3 {
     page-break-after: avoid; } }
-body {
-  border: 1px solid blue; }
 
 /*# sourceMappingURL=main.css.map */
