@@ -10,8 +10,7 @@
 html {
   color: #222;
   font-size: 1em;
-  line-height: 1.4;
-}
+  line-height: 1.4; }
 
 /*
  * Remove text-shadow in selection highlight:
@@ -22,13 +21,11 @@ html {
  */
 ::-moz-selection {
   background: #b3d4fc;
-  text-shadow: none;
-}
+  text-shadow: none; }
 
 ::selection {
   background: #b3d4fc;
-  text-shadow: none;
-}
+  text-shadow: none; }
 
 /*
  * A better looking default horizontal rule
@@ -39,8 +36,7 @@ hr {
   border: 0;
   border-top: 1px solid #ccc;
   margin: 1em 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /*
  * Remove the gap between audio, canvas, iframes,
@@ -53,8 +49,7 @@ iframe,
 img,
 svg,
 video {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /*
  * Remove default fieldset styles.
@@ -62,15 +57,13 @@ video {
 fieldset {
   border: 0;
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 /*
  * Allow only vertical resizing of textareas.
  */
 textarea {
-  resize: vertical;
-}
+  resize: vertical; }
 
 /* ==========================================================================
    Browser Upgrade Prompt
@@ -79,16 +72,14 @@ textarea {
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
-  padding: 0.2em 0;
-}
+  padding: 0.2em 0; }
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 body {
   background: url("../img/artwork-2.jpg") no-repeat center center fixed;
-  background-size: cover;
-}
+  background-size: cover; }
 
 header {
   background: url("../img/nav-bg.jpg") no-repeat center 0 fixed;
@@ -97,54 +88,46 @@ header {
   height: 3em;
   border-bottom: 1px solid #999;
   -webkit-transition: background-position 2s;
-  transition: background-position 2s;
-}
-header p {
-  margin: 0;
-  padding: 0;
-}
-header ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  display: flex;
-  -webkit-flex-direction: row;
-  flex-direction: row;
-}
-header ul li {
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 15%;
-  height: 100%;
-  cursor: pointer;
-  color: #ddd;
-  /* animation fx */
-  background: url("../img/button-1.jpg") no-repeat 100em 3em fixed;
-  -webkit-transition: background-position .5s;
-  transition: background-position .5s;
-}
-header ul li:hover {
-  background-position: 0 0;
-}
-header ul li span {
-  text-align: center;
-  width: 100%;
-}
+  transition: background-position 2s; }
+  header p {
+    margin: 0;
+    padding: 0; }
+  header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    -webkit-flex-direction: row;
+    flex-direction: row; }
+    header ul li {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 15%;
+      height: 100%;
+      cursor: pointer;
+      color: #ddd;
+      /* animation fx */
+      background: url("../img/button-1.jpg") no-repeat 100em 3em fixed;
+      -webkit-transition: background-position .5s;
+      transition: background-position .5s; }
+      header ul li:hover {
+        background-position: 0 0; }
+      header ul li span {
+        text-align: center;
+        width: 100%; }
 
 .end {
-  background: url("../img/nav-bg.jpg") no-repeat center -59em fixed;
-}
+  background: url("../img/nav-bg.jpg") no-repeat center -59em fixed; }
 
 .white-characters {
   color: #fff;
   position: absolute;
   bottom: 3em;
-  right: 3em;
-}
+  right: 3em; }
 
 /* ==========================================================================
    Helper classes
@@ -153,8 +136,7 @@ header ul li span {
  * Hide visually and from screen readers
  */
 .hidden {
-  display: none !important;
-}
+  display: none !important; }
 
 /*
  * Hide only visually, but have it available for screen readers:
@@ -168,8 +150,7 @@ header ul li span {
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 1px;
-}
+  width: 1px; }
 
 /*
  * Extends the .visuallyhidden class to allow the element
@@ -183,15 +164,13 @@ header ul li span {
   margin: 0;
   overflow: visible;
   position: static;
-  width: auto;
-}
+  width: auto; }
 
 /*
  * Hide visually and from screen readers, but maintain layout
  */
 .invisible {
-  visibility: hidden;
-}
+  visibility: hidden; }
 
 /*
  * Clearfix: contain floats
@@ -209,12 +188,10 @@ header ul li span {
   content: " ";
   /* 1 */
   display: table;
-  /* 2 */
-}
+  /* 2 */ }
 
 .clearfix:after {
-  clear: both;
-}
+  clear: both; }
 
 /* ==========================================================================
    EXAMPLE Media Queries for Responsive Design.
@@ -222,11 +199,9 @@ header ul li span {
    Modify as content requires.
    ========================================================================== */
 @media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+  /* Style adjustments for viewports that meet the condition */ }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+  /* Style adjustments for high resolution devices */ }
 /* ==========================================================================
    Print styles.
    Inlined to avoid the additional HTTP request:
@@ -243,21 +218,17 @@ header ul li span {
     /* Black prints faster:
        http://www.sanbeiji.com/archives/953 */
     box-shadow: none !important;
-    text-shadow: none !important;
-  }
+    text-shadow: none !important; }
 
   a,
   a:visited {
-    text-decoration: underline;
-  }
+    text-decoration: underline; }
 
   a[href]:after {
-    content: " (" attr(href) ")";
-  }
+    content: " (" attr(href) ")"; }
 
   abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
+    content: " (" attr(title) ")"; }
 
   /*
    * Don't show links that are fragment identifiers,
@@ -265,41 +236,35 @@ header ul li span {
    */
   a[href^="#"]:after,
   a[href^="javascript:"]:after {
-    content: "";
-  }
+    content: ""; }
 
   pre,
   blockquote {
     border: 1px solid #999;
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
 
   /*
    * Printing Tables:
    * http://css-discuss.incutio.com/wiki/Printing_Tables
    */
   thead {
-    display: table-header-group;
-  }
+    display: table-header-group; }
 
   tr,
   img {
-    page-break-inside: avoid;
-  }
+    page-break-inside: avoid; }
 
   img {
-    max-width: 100% !important;
-  }
+    max-width: 100% !important; }
 
   p,
   h2,
   h3 {
     orphans: 3;
-    widows: 3;
-  }
+    widows: 3; }
 
   h2,
   h3 {
-    page-break-after: avoid;
-  }
-}
+    page-break-after: avoid; } }
+
+/*# sourceMappingURL=app.css.map */
