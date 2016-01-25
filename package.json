@@ -1,0 +1,22 @@
+{
+  "name": "bandwithouthands",
+  "version": "1.0.0",
+  "description": "band without hands v2",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/akisma/bandwithouthands.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/akisma/bandwithouthands/issues"
+  },
+  "homepage": "https://github.com/akisma/bandwithouthands#readme",
+  "devDependencies": {
+    "express": "^4.13.4"
+  }
+}
