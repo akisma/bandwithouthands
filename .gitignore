@@ -6,6 +6,9 @@ npm-debug.log*
 # os x shit
 .DS_Store
 
+# sass
+.sass-cache
+
 # Runtime data
 pids
 *.pid
