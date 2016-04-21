@@ -1,0 +1,239 @@
+// ============================================================
+// Base Typography
+// ============================================================
+
+@font-face
+  font-family: avenir-light
+  src: url("/fonts/Avenir-Light.woff")
+
+@font-face
+  font-family: avenir-book
+  src: url("/fonts/Avenir-Book.woff")
+
+@font-face
+  font-family: avenir-heavy
+  src: url("/fonts/Avenir-Heavy.woff")
+
+@font-face
+  font-family: avenir-black
+  src: url("/fonts/Avenir-Black.woff")
+
+body
+  color: $dark-gray
+  font-family: $sans-serif
+  line-height: 1.4
+
+p
+  margin: 0 0 1em
+
+strong
+  font-family: avenir-heavy
+
+em
+  font-style: italic
+
+code
+  font-family: $monospace
+  font-size: rem(13)
+
+// ------------------------------------------------------------
+// Links
+// ------------------------------------------------------------
+
+a,
+.link
+  color: $link-color
+  text-decoration: none
+  transition: $hover-transition
+  outline: 0
+
+  &:hover,
+  &:focus
+    color: $link-hover-color
+
+  &.-light
+    color: $white
+
+    &:hover,
+    &:focus
+      color: $link-hover-color
+
+
+// ------------------------------------------------------------
+// Headings
+// ------------------------------------------------------------
+
+h1, h2, h3, h4, h5, h6
+  font-family: avenir-heavy
+  font-weight: normal
+
+h1
+  font-size: em(34)
+  line-height: 1.09
+  margin: 0 0 em(12)
+
+h2
+  font-size: em(28)
+  line-height: 1.125
+  margin: 0 0 em(6)
+
+h3
+  font-size: em(22)
+  line-height: 1.29
+  margin: 0 0 em(6)
+
+h4
+  font-style: italic
+  margin: 0 0 em(6)
+
+h5
+  font-family: $sans-serif
+  font-weight: normal
+  margin: 0 0 em(6)
+
+h6
+  font-family: $sans-serif
+  font-size: em(13)
+  margin: 0 0 em(6)
+  text-transform: uppercase
+
+
+// ------------------------------------------------------------
+// Lists
+// ------------------------------------------------------------
+
+ol,
+ul
+  padding-left: 1.3em
+  margin-bottom: 1em
+
+ul
+  list-style-type: disc
+
+ol
+  list-style-type: decimal
+
+li
+  line-height: 1.667
+  margin-bottom: .4em
+  padding-left: .4em
+
+ul.plain
+  list-style-type: none
+  padding: 0
+
+  li
+    line-height: 1.667
+    margin-bottom: 0
+    padding: 0
+
+
+// -----------------------------------------------------------
+// Blockquote
+// -----------------------------------------------------------
+
+blockquote
+  max-width: rem(1000)
+  margin: 0 auto
+
+
+  p
+    font-size: rem(20)
+    margin-bottom: .25em
+
+    +mq-min(em(700))
+      font-size: rem(28)
+
+    &:before
+      content: '\201C'
+
+    &:after
+      content: '\201D'
+
+
+  cite
+    font-size: rem(16)
+    font-family: avenir-heavy
+
+    +mq-min(em(700))
+      font-size: rem(20)
+
+
+
+// ------------------------------------------------------------
+// Titles
+// ------------------------------------------------------------
+
+.title
+  font-family: avenir-heavy
+
+  &.-medium
+    font-size: rem(20)
+
+    +mq-min(em(600))
+    font-size: rem(26)
+
+
+  &.-large
+    font-size: rem(22)
+
+    +mq-min(em(600))
+      font-size: rem(36)
+
+
+  &.-xlarge
+    font-family: avenir-book
+    font-size: rem(36)
+
+    +mq-min(em(600))
+      font-size: rem(50)
+
+    +mq-min(em(1000))
+      font-size: rem(100)
+
+
+// ------------------------------------------------------------
+// Kickers
+// ------------------------------------------------------------
+
+.kicker,
+.kicker p
+  line-height: 1.5
+  margin: 0 auto
+  max-width: rem(800)
+
+  p
+    margin-bottom: .6em
+
+  &.-medium
+    color: $gray
+    font-family: avenir-light
+    font-size: rem(18)
+
+    +mq-min(em(600))
+      font-size: rem(20)
+
+  &.-large
+    font-size: rem(20)
+
+    +mq-min(em(600))
+      font-size: rem(24)
+
+  &.-medium.-orange
+    color: $orange
+
+
+// ------------------------------------------------------------
+// Headers
+// ------------------------------------------------------------
+
+.header,
+.header p
+  font-family: avenir-heavy
+  font-size: rem(16)
+
+  &.-medium
+    font-size: rem(20)
+
+  &.-large
+    font-size: rem(24)

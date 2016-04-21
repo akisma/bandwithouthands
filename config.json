@@ -1,0 +1,9 @@
+{
+  "env": {
+    "local": {
+      "url": "http://localhost:8080"
+    }
+  },
+  "src": "./src",
+  "dest": "./build"
+}
