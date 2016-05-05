@@ -1,6 +1,44 @@
 /* USE THIS FOR GLOBAL STYLES THAT DON'T BELONG TO A LAYOUT OR COMPONENT/PAGE */
 
 body
-  background: url('../img/artwork-2.jpg') no-repeat center center fixed
+  background: url('/static/img/artwork-2.jpg') no-repeat center center fixed
   background-size: cover
   font-family: 'Open Sans', sans-serif
+
+footer
+	position: fixed
+	bottom: 0
+	height: 3em
+	width: 100%
+	/* needs background */
+
+	.footer-container
+		display: flex
+		flex-direction: row
+
+		& > *
+			flex-basis: 33%
+			flex-grow: 1
+
+		.social-links
+			ul
+				list-style-type: none
+				padding: 0
+				margin: 0
+
+				li
+					padding: 0
+					margin: 0z
+					display: inline-block
+					float: left
+
+		.white-characters
+			color: #fff
+
+			font-family: 'courier'
+
+			margin-right: 3em
+			line-height: 13px
+
+			&:hover
+				line-height: 25px

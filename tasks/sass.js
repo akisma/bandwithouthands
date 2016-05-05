@@ -19,5 +19,5 @@ gulp.task('sass', function () {
         })
       .pipe(autoprefixer())
     .pipe(sourcemaps.write('.'))
-    .pipe(gulp.dest(path.join(config.dest, 'build')))
+    .pipe(gulp.dest('build'))
 })
