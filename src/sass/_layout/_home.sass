@@ -1,5 +1,12 @@
 .home
 	header
 		ul
+			+mq-max(768px)
+				flex-direction: column
+
 			li
-				padding: 15em 0
+				padding: 15vw 0
+
+				+mq-max(768px)
+					padding: 8vw 0
+
