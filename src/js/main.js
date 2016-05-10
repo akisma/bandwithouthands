@@ -22,3 +22,11 @@
 }());
 
 let $ = require('jquery');
+
+$('nav li').on('click', function(e){
+    console.log('NAV CLICK');
+});
+
+window.onload = function(){
+    $('header').addClass('end');
+};
